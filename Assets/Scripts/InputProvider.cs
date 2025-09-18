@@ -14,17 +14,14 @@ public class InputProvider : SimulationBehaviour, INetworkRunnerCallbacks
     {
         if (Runner != null)
         {
-            
             Initialize();
         }
     }
 
     private void Update()
     {
-
         if (done == false && Runner != null)
         {
-            Debug.Log("PIPIPI");
             Initialize();
         }
     }
@@ -36,7 +33,7 @@ public class InputProvider : SimulationBehaviour, INetworkRunnerCallbacks
 
     private void Initialize()
     {
-        
+        Debug.Log("PIPIPI");
         _playerActionMap = new InputActions();
         _playerActionMap.Player.Enable();
         Runner.AddCallbacks(this);
