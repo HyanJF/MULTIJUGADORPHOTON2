@@ -16,8 +16,7 @@ GameObject:
   - component: {fileID: 943984806799524416}
   - component: {fileID: -966667115983444445}
   - component: {fileID: -3691292971562698941}
-  - component: {fileID: 1497660131483947744}
-  - component: {fileID: 6071801134716801887}
+  - component: {fileID: 5528076685999090275}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -160,8 +159,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: -966667115983444445}
   - {fileID: -3691292971562698941}
-  - {fileID: 1497660131483947744}
-  - {fileID: 6071801134716801887}
+  - {fileID: 5528076685999090275}
   ForceRemoteRenderTimeframe: 0
 --- !u!114 &-966667115983444445
 MonoBehaviour:
@@ -193,7 +191,7 @@ MonoBehaviour:
   SyncParent: 0
   _autoAOIOverride: 1
   DisableSharedModeInterpolation: 0
---- !u!114 &1497660131483947744
+--- !u!114 &5528076685999090275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -202,20 +200,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9049541616819413952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61812254cd9a72646a3dcd904ccf0da0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _color: {r: 0, g: 0, b: 0, a: 0}
-  _NetworkColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &6071801134716801887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9049541616819413952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19a8398eefa63334aa022ffe9e4c4cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a5ead1a19239324ca23369a953ed6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
