@@ -237,3 +237,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2128167644798986902, guid: 3e85fa35adddb8a48be89f827a9fb539, type: 3}
   shootPos: {fileID: 5239332466056363948}
+  particles: {fileID: 404415385866959769, guid: 1c24b8ca5b828964a912dafa8ad179b1, type: 3}

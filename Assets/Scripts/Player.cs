@@ -6,7 +6,8 @@ public class Player : NetworkBehaviour
     private InputActions inputActions;
     private bool eggPain = false;
     private bool fire = false;
-    private void Awake()
+
+    private void Start()
     {
         inputActions = new InputActions();
         inputActions.Player.Enable();
@@ -53,6 +54,8 @@ public class Player : NetworkBehaviour
     public GameObject bulletPrefab;
     public Transform shootPos;
 
+    public GameObject particles;
+
     [Rpc(RpcSources.InputAuthority, RpcTargets.StateAuthority)]
     private void Rpc_ShoootAShot()
     {
@@ -66,6 +69,13 @@ public class Player : NetworkBehaviour
         {
             Debug.Log("HEY PA EL RIGIDBODY");
         }
+        Rpc_PlayShootEffect();
+    }
+
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    private void Rpc_PlayShootEffect()
+    {
+        Instantiate(particles, shootPos.position, shootPos.rotation);
     }
     #endregion
 }
